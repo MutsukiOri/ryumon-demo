@@ -1,0 +1,96 @@
+:root{--sumi:#141211;--sumi2:#1c1917;--shu:#b8322a;--shu2:#d24a3c;--gold:#b89a5e;--paper:#ece4d6;--mute:#a69c8c}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:#010101}
+body{background:var(--sumi);color:var(--paper);font-family:"Noto Sans CJK JP",sans-serif;font-size:15px;line-height:1.9;letter-spacing:.04em}
+.serif,h1,h2,h3{font-family:"Noto Serif CJK JP",serif;font-weight:500}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 32px}
+header{position:sticky;top:0;z-index:5;background:rgba(20,18,17,.94);border-bottom:1px solid rgba(184,154,94,.35)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{display:flex;align-items:center;gap:12px;font-family:"Noto Serif CJK JP";font-size:20px;letter-spacing:.2em}
+.seal{display:inline-grid;place-items:center;width:34px;height:34px;border:1.5px solid var(--shu2);color:var(--shu2);font-size:13px;line-height:1.05;font-family:"Noto Serif CJK JP";writing-mode:vertical-rl;letter-spacing:0}
+nav{display:flex;gap:28px;font-size:13px;color:var(--mute)}
+nav a:hover{color:var(--paper)}
+.btn{display:inline-block;padding:12px 26px;border:1px solid var(--gold);color:var(--paper);font-size:14px;letter-spacing:.12em}
+.btn.red{background:var(--shu);border-color:var(--shu)}
+.hero{position:relative;min-height:640px;overflow:hidden;border-bottom:1px solid rgba(184,154,94,.35)}
+.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 70% 40%,rgba(184,50,42,.18),transparent 60%)}
+.hero .wrap{position:relative;display:flex;justify-content:space-between;align-items:center;min-height:640px;gap:40px}
+.tate{writing-mode:vertical-rl;font-family:"Noto Serif CJK JP";letter-spacing:.3em}
+.hero h1{font-size:46px;line-height:1.9;height:440px}
+.hero h1 em{font-style:normal;color:var(--shu2)}
+.hero .lead{max-width:420px}
+.hero .lead p{color:var(--mute);margin:18px 0 30px}
+.eyebrow{font-size:12px;letter-spacing:.35em;color:var(--gold)}
+.bigseal{position:absolute;right:46%;top:80px;width:150px;height:150px;border:2px solid rgba(210,74,60,.55);color:rgba(210,74,60,.55);display:grid;place-items:center;font-family:"Noto Serif CJK JP";font-size:40px;line-height:1.1;writing-mode:vertical-rl;transform:rotate(-4deg)}
+.bigseal:after{content:"";position:absolute;inset:6px;border:1px solid rgba(210,74,60,.35)}
+section{padding:110px 0;border-bottom:1px solid rgba(184,154,94,.18)}
+.sec{display:grid;grid-template-columns:90px 1fr;gap:56px}
+.sec h2{writing-mode:vertical-rl;font-size:30px;letter-spacing:.35em;border-right:1px solid var(--gold);padding-right:18px;height:max-content}
+.sec h2 small{display:block;font-size:11px;color:var(--gold);letter-spacing:.3em;font-family:"Noto Sans CJK JP"}
+.photo{aspect-ratio:4/5;border:1px dashed var(--gold);display:grid;place-items:center;text-align:center;color:var(--mute);font-size:13px;background:repeating-linear-gradient(45deg,#1c1917 0 10px,#191614 10px 20px)}
+.prof{display:grid;grid-template-columns:320px 1fr;gap:56px;align-items:start}
+.prof h3{font-size:26px;margin-bottom:6px}
+.prof .kana{color:var(--gold);font-size:12px;letter-spacing:.3em;margin-bottom:22px}
+.prof p+p{margin-top:14px}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.tags span{border:1px solid rgba(184,154,94,.5);padding:4px 14px;font-size:13px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(184,154,94,.35);border:1px solid rgba(184,154,94,.35)}
+.card{background:var(--sumi);padding:40px 32px}
+.card .no{font-family:"Noto Serif CJK JP";color:var(--shu2);font-size:13px;letter-spacing:.3em}
+.card h3{font-size:22px;margin:10px 0 14px}
+.card p{color:var(--mute);font-size:14px}
+.price{width:100%;border-collapse:collapse;font-family:"Noto Serif CJK JP"}
+.price td{padding:22px 8px;border-bottom:1px solid rgba(184,154,94,.3);font-size:18px}
+.price td:last-child{text-align:right;font-size:26px}
+.price td small{display:block;font-family:"Noto Sans CJK JP";font-size:12px;color:var(--mute)}
+.note{margin-top:26px;padding:22px 26px;border-left:2px solid var(--shu);background:var(--sumi2);font-size:14px}
+.faq details{border-bottom:1px solid rgba(184,154,94,.3);padding:22px 0}
+.faq summary{cursor:pointer;font-family:"Noto Serif CJK JP";font-size:17px;list-style:none}
+.faq summary:before{content:"問";color:var(--shu2);margin-right:16px}
+.faq p{margin-top:12px;color:var(--mute);padding-left:34px}
+.faq p:before{content:"答　";color:var(--gold)}
+.access{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.map{aspect-ratio:4/3;border:1px dashed var(--gold);display:grid;place-items:center;color:var(--mute);font-size:13px}
+dl.info{display:grid;grid-template-columns:110px 1fr;row-gap:14px}
+dl.info dt{color:var(--gold);font-size:13px}
+.ph{color:var(--shu2);border-bottom:1px dotted var(--shu2)}
+.cta{text-align:center;background:linear-gradient(180deg,var(--sumi),#24100e)}
+.cta h2{font-size:32px;letter-spacing:.25em;margin-bottom:16px}
+.cta p{color:var(--mute);margin-bottom:34px}
+.cta .row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.banner{display:flex;justify-content:space-between;align-items:center;border:1px solid var(--gold);padding:34px 40px;gap:24px}
+.banner h3{font-size:22px}
+footer{padding:46px 0 120px;font-size:12px;color:var(--mute);text-align:center}
+.fixbar{display:none}
+.tz{width:100%;border-collapse:collapse;text-align:center}
+.tz th,.tz td{border:1px solid rgba(184,154,94,.35);padding:14px 8px}
+.tz th{color:var(--gold);font-weight:400;font-size:13px}
+.tz td.jp{color:var(--shu2);font-family:"Noto Serif CJK JP"}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.steps li{list-style:none;border-top:1px solid var(--gold);padding-top:18px}
+.steps li:before{counter-increment:s;content:"其の" counter(s,cjk-ideographic);display:block;color:var(--shu2);font-family:"Noto Serif CJK JP";margin-bottom:8px}
+.steps h3{font-size:18px;margin-bottom:6px}.steps p{color:var(--mute);font-size:14px}
+.demo{position:fixed;left:12px;bottom:12px;font-size:11px;color:var(--mute);background:#000;padding:4px 10px;border:1px solid #333;z-index:9}
+@media(max-width:760px){
+ body{font-size:14px}.wrap{padding:0 20px}
+ nav,header .btn{display:none}
+ .hero,.hero .wrap{min-height:auto}
+ .hero .wrap{flex-direction:column-reverse;align-items:flex-start;padding:56px 20px 64px}
+ .hero h1{font-size:30px;height:330px;align-self:flex-end}
+ .bigseal{width:96px;height:96px;font-size:26px;left:24px;right:auto;top:70px}
+ section{padding:72px 0}
+ .sec{grid-template-columns:1fr;gap:28px}
+ .sec h2{writing-mode:horizontal-tb;border-right:0;border-bottom:1px solid var(--gold);padding:0 0 10px;font-size:24px;letter-spacing:.25em}
+ .prof,.access{grid-template-columns:1fr;gap:28px}
+ .prof .photo{max-width:260px}
+ .cards{grid-template-columns:1fr}.card{padding:30px 24px}
+ .price td{font-size:16px}.price td:last-child{font-size:21px}
+ .banner{flex-direction:column;align-items:flex-start;padding:26px}
+ .steps{grid-template-columns:1fr 1fr}
+ .tz{font-size:12px}
+ .fixbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;bottom:0;left:0;right:0;z-index:8}
+ .fixbar a{padding:16px;text-align:center;font-size:14px;letter-spacing:.1em;background:var(--sumi2);border-top:1px solid var(--gold)}
+ .fixbar a.r{background:var(--shu);border-color:var(--shu)}
+ .demo{bottom:64px}
+}
